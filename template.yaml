@@ -455,7 +455,7 @@ Resources:
                   - /etc/cfn/hooks.d/cfn-auto-reloader.conf
     Properties:
       ImageId: !FindInMap [AmiMap, !Ref "AWS::Region", "64"]
-      InstanceType: 't2.medium'
+      InstanceType: 't2.micro'
       IamInstanceProfile: !Ref 'BastionProfile'
       KeyName: !Ref 'KeyName'
       Tags:
